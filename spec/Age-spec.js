@@ -29,17 +29,16 @@ describe('Age', function() {
     let age = new Age(10)
     expect(age.toJupiterYears()).toEqual(Math.round(10*11.86));
   });
-
-
-
-
-
-
-
-  // it('takes age and life expectancy and earth years and conver to life expectancy on mars years', function () {
-  //   let age = new Age(10)
-  //   let earthLX = 80;
-  //   let yearsLeft = Math.round((80 - 10) * 1.88);
-  //   expect(age.marsYearsLeft(earthLX)).toEqual(yearsLeft);
-  // });
+  it('takes age and life expectancy and earth years and conver to life expectancy on mars years', function () {
+    let age = new Age(10)
+    let earthLX = 80;
+    let yearsLeft = Math.round((80 - 10) * 1.88);
+    expect(age.marsYearsLeft(earthLX)).toEqual(yearsLeft);
+  });
+  it('takes age and life expectancy and earth years and conver to life expectancy on venus years', function () {
+    let age = new Age(10)
+    let earthLX = 80;
+    let yearsLeft = Math.round((80 - 10) * .62);
+    expect(age.venusYearsLeft(earthLX)).toEqual(yearsLeft);
+  });
 });

@@ -27,7 +27,10 @@ export class Age {
   toJupiterYears(){
     return Math.round(this.age * 11.86)
   }
-  // marsYearsLeft(earthLX){
-  //   return Math.round((earthLX - this.age) * 1.88)
-  // }
+  marsYearsLeft(earthLX){
+    return Math.round((earthLX - this.age) * 1.88)
+  }
+  venusYearsLeft(earthLX){
+    return Math.round((earthLX - this.age) * .62)
+  }
 }
