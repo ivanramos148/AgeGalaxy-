@@ -21,6 +21,10 @@ describe('Age', function() {
     let age = new Age(10)
     expect(age.toVenusYears()).toEqual(Math.round(10*.62));
   });
+  it('Takes earth years and converts it to mercury years', function() {
+    let age = new Age(10)
+    expect(age.toMercuryYears()).toEqual(Math.round(10*.24));
+  });
 
 
 
