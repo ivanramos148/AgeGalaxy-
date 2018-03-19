@@ -18,7 +18,11 @@ export class Age {
   toMarsYears(){
     return Math.round(this.age * 1.88)
   }
-  marsYearsLeft(earthLX){
-    return Math.round((earthLX - this.age) * 1.88)
+  toVenusYears(){
+    return Math.round(this.age * .62)
   }
+
+  // marsYearsLeft(earthLX){
+  //   return Math.round((earthLX - this.age) * 1.88)
+  // }
 }

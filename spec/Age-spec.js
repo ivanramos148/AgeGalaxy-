@@ -17,10 +17,21 @@ describe('Age', function() {
     let age = new Age(10)
     expect(age.toMarsYears()).toEqual(Math.round(10*1.88));
   });
-  it('takes age and life expectancy and earth years and conver to life expectancy on mars years', function () {
+  it('Takes earth years and converts it to venus years', function() {
     let age = new Age(10)
-    let earthLX = 80;
-    let yearsLeft = Math.round((80 - 10) * 1.88);
-    expect(age.marsYearsLeft(earthLX)).toEqual(yearsLeft);
+    expect(age.toVenusYears()).toEqual(Math.round(10*.62));
   });
+
+
+
+
+
+
+
+  // it('takes age and life expectancy and earth years and conver to life expectancy on mars years', function () {
+  //   let age = new Age(10)
+  //   let earthLX = 80;
+  //   let yearsLeft = Math.round((80 - 10) * 1.88);
+  //   expect(age.marsYearsLeft(earthLX)).toEqual(yearsLeft);
+  // });
 });
