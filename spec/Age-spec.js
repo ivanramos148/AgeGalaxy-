@@ -13,4 +13,8 @@ describe('Age', function() {
     console.log(difference);
     expect(age.differenceInSeconds(Date1, Date2)).toEqual(difference);
   });
+  it('Takes earth years and converts it to mars years', function() {
+    let age = new Age(10)
+    expect(age.toMarsYears()).toEqual(Math.round(10*1.88));
+  });
 });
