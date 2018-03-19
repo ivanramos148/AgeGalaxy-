@@ -13,7 +13,6 @@ export class Age {
     let date2Seconds = date2.getTime();
     let difference  = date1Seconds - date2Seconds;
     return difference;
-
   }
   toMarsYears(){
     return Math.round(this.age * 1.88)
@@ -39,4 +38,9 @@ export class Age {
   jupiterYearsLeft(earthLX){
     return Math.round((earthLX - this.age) * 11.86)
   }
-}
+
+  lifeSurpassed(earthLX){
+    if(this.age > earthLX)
+      {return "oops you've surpassed the life expectancy by " + (this.age - earthLX) + "years!"}
+    }
+  }

@@ -53,4 +53,10 @@ describe('Age', function() {
     let yearsLeft = Math.round((80 - 10) * 11.86);
     expect(age.jupiterYearsLeft(earthLX)).toEqual(yearsLeft);
   });
+  it('lets you know if you"ve surpassed life expectancy, determine on the planet', function () {
+    let age = new Age(10)
+    let earthLX = 80;
+    let yearsSupassed = Math.round(80 - 10);
+    expect(age.lifeSurpassed(earthLX)).toEqual();
+  });
 });
