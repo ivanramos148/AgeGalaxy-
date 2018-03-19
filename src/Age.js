@@ -40,7 +40,10 @@ export class Age {
   }
 
   lifeSurpassed(earthLX){
-    if(this.age > earthLX)
-      {return "oops you've surpassed the life expectancy by " + (this.age - earthLX) + "years!"}
+    if(this.age > earthLX) {
+      return "oops you've surpassed the life expectancy by " + (this.age - earthLX) + "years!";
+    } else {
+      return false;
     }
   }
+}
