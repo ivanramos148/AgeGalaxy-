@@ -36,4 +36,7 @@ export class Age {
   mercuryYearsLeft(earthLX){
     return Math.round((earthLX - this.age) * .24)
   }
+  jupiterYearsLeft(earthLX){
+    return Math.round((earthLX - this.age) * 11.86)
+  }
 }

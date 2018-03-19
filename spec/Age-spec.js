@@ -47,4 +47,10 @@ describe('Age', function() {
     let yearsLeft = Math.round((80 - 10) * .24);
     expect(age.mercuryYearsLeft(earthLX)).toEqual(yearsLeft);
   });
+  it('takes age and life expectancy and earth years and conver to life expectancy on jupiter years', function () {
+    let age = new Age(10)
+    let earthLX = 80;
+    let yearsLeft = Math.round((80 - 10) * 11.86);
+    expect(age.jupiterYearsLeft(earthLX)).toEqual(yearsLeft);
+  });
 });
