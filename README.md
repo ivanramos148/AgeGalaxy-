@@ -1,4 +1,4 @@
-# Hair Salon
+# AgeGalaxy
 
 #### By Ivan Ramos
 
